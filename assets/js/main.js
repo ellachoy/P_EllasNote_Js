@@ -52,11 +52,13 @@ notify2('say something');
 // naming: doSomething, command, verb
 // e.g. createCardAndPoint -> createCard, createPoint
 // function is object in JS
+
 function printHello() {
     console.log('Hello');
   }
-  printHello();
-  
+  printHello(); // nur für 'Hello' aufzurufen
+
+  // mit parameter
   function log(message) {
     console.log(message);
   }
@@ -66,8 +68,15 @@ function printHello() {
   // 2. Parameters
   // primitive parameters: passed by value
   // object parameters: passed by reference
-  function changeName(obj) {
-    obj.name = 'coder';
+  function createGreetingMessage(name){
+    const message='Hallo,${name}';
+    return message;
+  }
+  const greetingMessage=createGreetingMessage('chris');
+  console.log(greetingMessage);
+
+  function changeName(object) { //passed object
+    object.name = 'coder';
   }
   const ellie = { name: 'ellie' };
   changeName(ellie);
@@ -178,6 +187,7 @@ function printHello() {
   // };
   
   const simplePrint = () => console.log('simplePrint!');
+  
   const add = (a, b) => a + b;
   const simpleMultiply = (a, b) => {
     // do something more
