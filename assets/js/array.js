@@ -13,7 +13,7 @@ console.log(fruits[0]);
 console.log(fruits[1]);
 console.log(fruits[2]);
 console.log(fruits[fruits.length - 1]);
-console.clear();
+// console.clear();
 // 3. Looping over an array
 // print all fruits
 // a. for
@@ -27,6 +27,12 @@ for (let fruit of fruits) {
 }
 
 // c. forEach
+// fruits.forEach(function(fruit,index){
+// console.log(fruit,index)
+// });
+// fruits.forEach(function(fruit){
+// console.log(fruit)
+// });
 fruits.forEach((fruit) => console.log(fruit));
 
 // 4. Addtion, deletion, copy
@@ -64,7 +70,7 @@ console.log(newFruits);
 
 // 5. Searching
 // indexOf: find the index
-console.clear();
+// console.clear();
 console.log(fruits);
 console.log(fruits.indexOf('🍎'));
 console.log(fruits.indexOf('🍉'));
@@ -75,7 +81,7 @@ console.log(fruits.includes('🍉'));
 console.log(fruits.includes('🥥'));
 
 // lastIndexOf
-console.clear();
+// console.clear();
 fruits.push('🍎');
 console.log(fruits);
 console.log(fruits.indexOf('🍎'));
