@@ -4,6 +4,8 @@ console.log('object')
 // a collection of related data and/or functionality.
 // Nearly all objects in JavaScript are instances of Object
 // object = { key : value };
+
+// 1.Literals and properties
 const obj1 = {}; // 'object literal' syntax
 const obj2 = new Object(); // 'object constructor' syntax
 
@@ -43,6 +45,12 @@ const person2 = { name: 'steve', age: 3 };
 const person3 = { name: 'dave', age: 4 };
 const person4 = new Person('elile', 30);
 console.log(person4);
+function makePerson(name,age){ //to add person4
+    return{
+        name,
+        age,
+    };
+}
 
 // 4. Constructor Function
 function Person(name, age) {
@@ -65,8 +73,12 @@ for (let key in ellie) {
 }
 
 // for (value of iterable)
+
 const array = [1, 2, 4, 5];
-for (let value of array) {
+// for(let i =0; i<array.length;i++){
+//     console.log(i);
+// }
+for (let value of array) {//ersatz für for iterals**simpler
   console.log(value);
 }
 
@@ -83,6 +95,10 @@ for (let key in user) {
 }
 // console.clear();
 console.log(user3);
+
+// const user4={};
+// object.assign(user4,user);
+// console.log(user4);
 
 const user4 = Object.assign({}, user);
 console.log(user4);
