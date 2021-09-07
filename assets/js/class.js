@@ -1,3 +1,5 @@
+console.log('Class')
+
 // Object-oriendted programming
 // class: template
 // object: instance of a class
